@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Nossas Fotos 💑</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+      /* menos espaçamento nas laterais em telas pequenas */
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    #texto {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      font-size: 1.3rem;
+      /* usa rem pra escalabilidade */
+      color: #333;
+      line-height: 1.5;
+      padding: 0 10px;
+    }
+
+
+    #foto {
+      max-width: 90vw;
+      /* máximo 90% da largura da viewport */
+      max-height: 60vh;
+      /* máximo 60% da altura da viewport */
+      width: auto;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      display: block;
+      /* para ajudar no alinhamento */
+      margin: 0 auto;
+      /* centraliza a imagem */
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 600px;
+      margin: 20px;
+      overflow: visible !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Player de Música -->
+  <div class="floating-elements"></div>
+  <div id="musicControls" class="music-controls">
+    <button id="musicToggle" class="music-btn">🎵 Play Music</button>
+    <audio id="bgMusic" loop>
+      <source id="musicSource" src="musica.mp3" type="audio/mpeg">
+      Seu navegador não suporta o áudio.
+    </audio>
+  </div>
+
+  <div class="container-dois">
+    <div id="texto">Ainda não é a hora de eu te entregar a nossa aliança, ainda quero fazer algo tão especial quanto
+      você.</div>
+    <img id="foto" src="fotos/foto 1.jpeg" alt="Foto do casal" style="display:none; margin-bottom: 10%;">
+    <button id="botaoProximo">Próximo ➡️</button>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="theme.js"></script>
+  <script src="script.js" defer></script>
+
+
+
+
+  <script src="fotos.js"></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
