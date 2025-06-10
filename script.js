@@ -184,7 +184,7 @@ function celebrate() {
     document.getElementById('celebrationMessage').textContent = config.celebration.message;
     document.getElementById('celebrationEmojis').textContent = config.celebration.emojis;
     setTimeout(() => {
-        window.location.href = "fotos.html"; // ou a página desejada
+    window.open("fotos.html", "_blank");
     }, 8000);
 
     // Create heart explosion effect
