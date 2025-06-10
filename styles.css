@@ -382,8 +382,10 @@ h2 {
   padding: 2rem;
   border-radius: 10px;
   overflow: hidden;
+  width: 100%;
   max-width: 600px;
   margin: 20px auto;
+  box-sizing: border-box;
 }
 
 .container-dois::before {
