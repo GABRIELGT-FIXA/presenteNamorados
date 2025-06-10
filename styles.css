@@ -420,12 +420,20 @@ h2 {
 
 .container-dois img,
 #foto {
-  width: 100%;
-  max-width: 100%;
+  max-width: 90vw;
+  max-height: 60vh;
+  width: auto;
   height: auto;
   display: block;
   object-fit: contain;
-  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container-dois img {
+  max-width: 100%;
+  height: auto;
 }
 
 
